@@ -17,5 +17,10 @@ knitr::opts_chunk$set(
 ```{r setup}
 library(lab5group5)
 ```
+This vignette summaries the functions in package lab5Group05.
+The function has 3 parameters:name, zoom_l, map_type.
+The parameter name should be a character which is the name of a location.
+The parameter zoom_l should be a number which is an integer between 3 to 21.
+The parameter maptype should be a character out of three types:"toner/terrain/watercolor".
 ## example:
-openmap("stockholm",10,'toner')
+findmap("stockholm",10,'toner')
