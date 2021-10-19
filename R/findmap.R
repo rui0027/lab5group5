@@ -51,7 +51,7 @@ findmap <- function(name,zoom_l,map_type) {
     zoom = zoom_l,
     maptype = map_type
   ))
-  a = list("map" = map, "name" = name,"zoom_l" =  zoom_l, "map_type" =  map_type)
+  mapinfo = list("map" = map, "name" = name,"zoom_l" =  zoom_l, "map_type" =  map_type)
   # return(map)
-  return(a)
+  return(mapinfo)
 }
