@@ -13,8 +13,7 @@ test_that("Missing parameter", {
 })
 
 test_that("Zoom level is greater than 8", {
-  a = findmap("stockholm",11,'toner')
-  expect_true(a$zoom_l > 9)
+  expect_true(findmap("stockholm",11,'toner')$zoom_l > 9)
 })
 
 test_that("Zoom level is less than 13", {
