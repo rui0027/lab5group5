@@ -5,8 +5,10 @@
 #' @param zoom_l Zoom level of the map.
 #' @param map_type Stamen map type.
 #' @return A list, stamen map with predefined zoom level and map type.
-#' @importFrom ggmap get_stamenmap
-#' @import ggmap
+#' @import methods
+#' @importFrom ggmap get_stamenmap ggmap
+#' @importFrom httr GET content
+#' @importFrom rjson fromJSON
 #' @export
 findmap <- function(name,zoom_l,map_type) {
   map_types = c("terrain",
