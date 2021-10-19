@@ -1,4 +1,3 @@
-library(ggmap)
 test_that("Wrong zoom level, zoom_l hsould be [9,12]", {
   expect_error(findmap("stockholm",8,'toner'))
   expect_error(findmap("stockholm",13,'toner'))
